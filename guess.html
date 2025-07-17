@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <title>Guess</title>
+    <link rel="stylesheet" href="guess.css">
+    <script src="guess.js"></script>
+</head>
+<body>
+    <div class="game-box">
+        <h1> Guess a Number ! </h1>
+        <p class="sub-heading">Try your luck!!</p>
+
+        <div class="game-instructions">
+            <div class="instructions">
+                <div class="game-range">Range : <span id="range">1-100</span> </div>
+            </div>
+            <div class="instructions">
+                <div class="game-attempts">Attempts : <span id="attempts">0</span> </div>
+            </div>
+        </div>
+
+        <div class="get-input">
+            <div class="input-box">
+                 <input type="number" id="getinput" placeholder="Enter your guess" min="1" max="100">
+            </div>
+            <button class="input-button" id="inputbutton" onclick="makeguess()">Make Guess</button>
+        </div>
+
+        <div class="answer empty" id="answer">
+            Make your first guess!
+        </div>
+        <div class="useless">
+            <button class="useless-button" >ab </button>
+        </div>
+
+    </div>
+</body>
+</html>
