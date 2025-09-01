@@ -15,3 +15,15 @@ void main()
     float amount;
     welcome();
 }
+
+void welcome()
+{
+    printf("*********************************");
+    printf("    Welcome to The Git Bank      ");
+    printf("*********************************");
+    printf("current balance = %.2f\n", balance);
+    printf("*********************************");
+}
+void deposit (float amount)
+{
+    balance += amount;
